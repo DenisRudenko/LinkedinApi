@@ -23,7 +23,9 @@ Copy the Client ID and Client Secret keys.
     $url = "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=".CLIENT_ID."&redirect_uri=".REDIRECT_URI."&scope=".SCOPES."&state=".$state;
     ?>
     <a href="<?php echo $url; ?>">Login with LinkedIn</a>
+    
 ## 3.Exchange Authorization Code for an Access Token
+
 - callback.php:
      <?php
     require_once 'init.php';
@@ -48,7 +50,8 @@ Copy the Client ID and Client Secret keys.
     }
 
 ## 4. Get Your LinkedIn ID using API
->  <?php
+
+  <?php
 require_once 'config.php';
 require_once 'vendor/autoload.php';
 use GuzzleHttp\Client;
@@ -68,7 +71,8 @@ $access_token = 'YOUR_ACCESS_TOKEN';
 }
 
 ## 5.Send Post on LinkedIn Using LinkedIn API and PHP
-> ?php
+
+ ?php
 require_once 'vendor/autoload.php';
 use GuzzleHttp\Client;
  
